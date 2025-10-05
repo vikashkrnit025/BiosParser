@@ -1,0 +1,89 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build System Config",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-Iinclude",
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "-D_WIN32",
+                "-o",
+                "system_config.exe",
+                "src/*.c"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Build the system configuration manager"
+        },
+        {
+            "label": "Clean Build",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "if exist system_config.exe del system_config.exe && if exist build rmdir /s /q build && if exist configs\\*.bin del configs\\*.bin"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "detail": "Clean all build artifacts"
+        },
+        {
+            "label": "Run System Config",
+            "type": "shell",
+            "command": "./system_config.exe",
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared"
+            },
+            "dependsOn": "Build System Config",
+            "detail": "Build and run the system configuration manager"
+        },
+        {
+            "label": "Build Config Generator",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-Iinclude",
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "-D_WIN32",
+                "-o",
+                "config_gen.exe",
+                "tools/config_generator.c",
+                "src/config_parser.c",
+                "src/validator.c"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Build the configuration generator tool"
+        }
+    ]
+}

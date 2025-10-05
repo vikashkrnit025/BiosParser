@@ -1,0 +1,24 @@
+{
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/include"
+    ],
+    "C_Cpp.default.defines": [
+        "_WIN32",
+        "__MINGW32__"
+    ],
+    "C_Cpp.default.compilerPath": "gcc",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.intelliSenseMode": "gcc-x86",
+    "files.associations": {
+        "*.h": "c",
+        "*.c": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "string.h": "c",
+        "stdint.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.intelliSenseEngine": "Default",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt"
+}

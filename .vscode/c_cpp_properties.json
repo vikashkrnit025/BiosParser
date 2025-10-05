@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include",
+                "C:/MinGW/include",
+                "C:/MinGW/lib/gcc/mingw32/*/include",
+                "C:/MinGW/lib/gcc/mingw32/*/include-fixed",
+                "C:/Program Files/mingw-w64/**/include",
+                "C:/msys64/mingw64/include",
+                "C:/msys64/ucrt64/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "_WIN32",
+                "__MINGW32__"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x86",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "C:/MinGW/include",
+                    "C:/msys64/mingw64/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}

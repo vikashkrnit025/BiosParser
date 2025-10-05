@@ -1,0 +1,29 @@
+{
+    "folders": [
+        {
+            "name": "System Configuration Manager",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "C_Cpp.default.includePath": [
+            "${workspaceFolder}/include",
+            "${workspaceFolder}/**"
+        ],
+        "C_Cpp.default.defines": [
+            "_WIN32",
+            "__MINGW32__"
+        ],
+        "files.exclude": {
+            "**/*.exe": false,
+            "**/*.o": true,
+            "**/build": true
+        }
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-vscode.cpptools",
+            "ms-vscode.cpptools-extension-pack"
+        ]
+    }
+}
