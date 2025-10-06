@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # System Configuration Manager
 
 A comprehensive system configuration parser and management utility for Windows systems. This application provides a robust interface for managing system settings through binary configuration files.
@@ -175,3 +176,6 @@ The application includes built-in validation testing:
 ## License
 
 This project is developed as a system configuration management tool for Windows environments.
+=======
+# BiosParser
+>>>>>>> 2709c664232a16d4c0947651e1d697981e29e075
